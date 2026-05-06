@@ -12,3 +12,6 @@ The CNN notebook includes a `DO_TRAINING` flag which will train the model when r
 
 # Outputs
 The output directory can be configured in the `OUTPUT_DIR` variable of the configuration cell of both notebooks. You may need to additionally create a `CNN` and an `SVM` directory inside of the `OUTPUT_DIR`.
+
+# Demos
+The demo section of both notebooks performs the same demo with a pre-trained model. Running the demo will start a local web server. `benignRequest.sh` and `maliciousRequest.sh` located in the `/demoRequests` directory will send a simulated benign or malicious request to the server respectively. The model will acts as middleware to allow or deny access to the server's resources.
